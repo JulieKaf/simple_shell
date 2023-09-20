@@ -31,6 +31,7 @@ void read_command(char cmd[], char *par[])
 			par[i] = NULL;
 		}
 		free(line);
+		free(*par);
 	}
 	else
 	{
